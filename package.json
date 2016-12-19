@@ -1,0 +1,20 @@
+{
+  "name": "angularjs-validation",
+  "version": "1.0.0",
+  "description": "A form validation module for Angular 1.x",
+  "main": "validation.js",
+  "scripts": {
+    "build": "cp -r src/ dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inputlogic/angularjs-validation.git"
+  },
+  "author": "Shawn Adrian <shawn@inputlogic.ca>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/inputlogic/angularjs-validation/issues"
+  },
+  "homepage": "https://github.com/inputlogic/angularjs-validation#readme"
+}
