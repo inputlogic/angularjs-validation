@@ -15,9 +15,8 @@
     return factory(root.angular);
   }
 }(this, function (angular) {
-  'use strict';
 
-  var moduleName = 'validation';
+  var moduleName = 'validation'
 
   angular
     .module(moduleName, [])

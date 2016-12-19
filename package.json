@@ -1,8 +1,8 @@
 {
   "name": "angularjs-validation",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "A form validation module for Angular 1.x",
-  "main": "validation.js",
+  "main": "dist/validation.js",
   "scripts": {
     "build": "cp -r src/ dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
