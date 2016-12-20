@@ -1,6 +1,6 @@
 /*
  * @license
- * angularjs-validation v1.0.7
+ * angularjs-validation v1.0.8
  * (c) 2015 Shawn Adrian <shawn@inputlogic.ca> http://inputlogic.ca
  * License: MIT
  */
@@ -62,7 +62,7 @@
 
   /* SHAKE THAT */
   // directive to shake login on error
-  anglular.module(moduleName).directive('validationShake', ['$animate', function($animate) {
+  angular.module(moduleName).directive('validationShake', ['$animate', function($animate) {
     
     return {
       require: '^form',
