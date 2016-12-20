@@ -1,6 +1,6 @@
 /*
  * @license
- * angularjs-validation v1.0.8
+ * angularjs-validation v1.0.9
  * (c) 2015 Shawn Adrian <shawn@inputlogic.ca> http://inputlogic.ca
  * License: MIT
  */
@@ -23,13 +23,14 @@
     .factory('validationService', validationService);
 
   validationService.$inject = [
+    '$window',
     '$http', 
     '$q', 
     '$rootScope', 
     '$state'
   ];
 
-  function validationService($http, $q, $rootScope, $state) {
+  function validationService($window, $http, $q, $rootScope, $state) {
     var service = {};
     
     // HANDLE ERRORS
@@ -125,7 +126,7 @@
   });
 
   /* ERRORS */
-  angular.module(moduleName).directive('validationErrors', function() {
+  angular.module(moduleName).directive('validationClear', function() {
     return {
       restrict: 'A',
       require: '?ngModel',
@@ -158,29 +159,6 @@
       }
     };
   });  
-
-  /* CLEAR */
-  angular.module(moduleName).directive('validationClear', function() {
-    return {
-      restrict: 'A',
-      require: '?ngModel',
-      link: function(scope, elem, attrs, form) {
-
-        elem.on('focus', function() {
-          if($(this).val() === 'placeholder') {
-            $(this).val('');
-          }
-        });
-        
-        elem.on('blur', function(){
-          if($(this).val() === '') {
-            $(this).val('placeholder');
-          }
-        });
-
-      }
-    };
-  });
 
   return moduleName;
 }));

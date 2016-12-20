@@ -1,6 +1,6 @@
 {
   "name": "angularjs-validation",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A form validation module for Angular 1.x",
   "main": "validation.js",
   "scripts": {
