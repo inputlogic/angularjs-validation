@@ -1,6 +1,6 @@
 /*
  * @license
- * angularjs-validation v1.0.0
+ * angularjs-validation v1.0.7
  * (c) 2015 Shawn Adrian <shawn@inputlogic.ca> http://inputlogic.ca
  * License: MIT
  */
@@ -16,7 +16,7 @@
   }
 }(this, function (angular) {
 
-  var moduleName = 'validation'
+  var moduleName = 'validation';
 
   angular
     .module(moduleName, [])
