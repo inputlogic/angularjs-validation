@@ -76,6 +76,7 @@
         // listen on submit event
         element.on('submit', function(e) {
           
+          e.preventDefault()          
           console.log('just clicked submit');
                   
           // tell angular to update scope
